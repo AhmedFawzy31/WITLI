@@ -216,19 +216,6 @@ header .video-title img{
 .sponsor{
     margin-top: 103px;
 }
-.sponsor .see-more{
-    width: 231px;
-    height: 100%;
-    padding: 8px;
-}
-.sponsor .see-more .wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background: rgba(232, 225, 221, 0.5);
-}
 .sponsor .see-more p{
     margin-top: 12.5px;
     font-family: "whytebook";
@@ -275,6 +262,15 @@ header .video-title img{
     margin: auto;
     width: 231px;
     display: block;
+}
+.sponsor-slider .slide-container .see-more{
+    height: 100%;
+    padding: 8px;
+    background: rgba(232, 225, 221, 0.5);
+    background-clip: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .sponsor-slider .sponsor-img{
     max-width: 213px;
