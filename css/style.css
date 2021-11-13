@@ -197,7 +197,7 @@ header .header-video{
     max-width: 50%;
     position: relative;
 }
-header .header-video img{
+header .header-video > img{
     width: 100%;
     object-fit: cover;
     height: 100%;
