@@ -169,13 +169,10 @@ header .header-video .video-title{
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100%; max-height: 100%;;
     color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 2;
-    flex-direction: column;
+    top: 50%;
+    transform: translateY(-50%);
 }
 header .header-video .play-control a{
     cursor: pointer;
@@ -199,7 +196,7 @@ header .header-video{
 header .header-video > img{
     width: 100%;
     object-fit: cover;
-    min-height: 100%; max-height: 100%;;
+    height: 100%;
 }
 header .video-title img{
     width: auto;
@@ -351,10 +348,10 @@ body .slider .slide-track:hover{
 }
 .video-section .desktop-textcontainer{
     position: absolute;
-    top: 0;
     left: 0;
     width: 100%;
-    min-height: 100%; max-height: 100%;;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 2;
 }
 .video-section .desktop-textcontainer > div{
@@ -403,17 +400,21 @@ body .slider .slide-track:hover{
     padding-left: 40px;
     padding-right: 40px;
 }
-.video-section .text-container,
-.video-section .desktop-textcontainer > div > div{
-    min-height: 100%; max-height: 100%;;
+.video-section .video .more{
+    position: absolute;
+    bottom: 0;
 }
-.video-section .video{
+/*.video-section .text-container,
+.video-section .desktop-textcontainer > div > div{
+    
+}*/
+.video-section .video, .video-section .text{
     position: relative;
 }
 .video-section .video .text-container{
     position: absolute;
     width: 100%;
-    min-height: 100%; max-height: 100%;;
+    
     top: 0;
     left: 0;
 }
@@ -532,11 +533,11 @@ body .slider .slide-track:hover{
     padding: 0 10px;
 }
 .map .map-container img{
-    min-height: 100%; max-height: 100%;;
+    height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.map .col-md:first-of-type > div{
+.map .map-text-container{
     background-color: var(--shayblbn);
     display: flex;
     flex-direction: column;
@@ -566,7 +567,7 @@ body .slider .slide-track:hover{
     margin-bottom: 15px;
     color: var(--dark-body);
 }
-.map .col-md > div > div > p{
+.map .map-text-container .map-text > p{
     font-size: 21px;
     line-height: 31px;
     letter-spacing: -0.04em;
@@ -575,9 +576,9 @@ body .slider .slide-track:hover{
     color: var(--dark-body);
     max-width: 487px;
 }
-.map .col-md > div{
-    min-height: 100%; max-height: 100%;;
-}
+/*.map .col-md > div{
+    
+}*/
 /*.map .col-sm > div > div > div:first-of-type{
     padding-bottom: 23px;
 }*/
@@ -624,7 +625,7 @@ body .slider .slide-track:hover{
 .help .col-md::before{
     content: '';
     width: 100%;
-    min-height: 100%; max-height: 100%;;
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -643,7 +644,7 @@ body .slider .slide-track:hover{
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100%; max-height: 100%;;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -782,6 +783,10 @@ nav.nav-active .navbar-toggler img:first-of-type{
     .sponsor .row:first-of-type > div:first-of-type > div{
         padding-left: 30px;
     }
+    .video-section .text .more{
+        position: absolute;
+        bottom: 0;
+    }
 }
 @media screen and (max-width: 991px)
 {
@@ -830,7 +835,7 @@ nav.nav-active .navbar-toggler img:first-of-type{
         margin-top: 45px;
     }
     nav.nav-active{
-        min-height: 100%; max-height: 100%;;
+        
         background-color: var(--dark2);
         border-bottom: 1px solid rgba(255, 255, 255, 0.07);
     }
@@ -867,7 +872,6 @@ nav.nav-active .navbar-toggler img:first-of-type{
     }
     header .header-video > img{
         max-height: 261px;
-        min-height: 100%;
     }
     header .header-links-mobile .slick-slide {
         margin-left: 15px;
@@ -992,7 +996,6 @@ nav.nav-active .navbar-toggler img:first-of-type{
     }
     .video-section video{
         max-height: 355px;
-        min-height: 100%;
     }
     .video-section p{
         max-width: 100%;
@@ -1044,7 +1047,7 @@ nav.nav-active .navbar-toggler img:first-of-type{
         padding-left: 16px;
         padding-right: 16px;
     }
-    .video-section .text .subtext{
+    .video-section .subtext{
         margin-top: 47px;
     }
     .map .map-text-container{
@@ -1056,7 +1059,7 @@ nav.nav-active .navbar-toggler img:first-of-type{
     .map .map-text{
         padding: 30px 16px 0 16px;
     }
-    .map .more, .video-section .text .more{
+    .map .more, .video-section .more{
         margin-top: 45px;
     }
     .map h2{
@@ -1083,7 +1086,7 @@ nav.nav-active .navbar-toggler img:first-of-type{
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        min-height: 100%; max-height: 100%;;
+        
     }
     footer hr, footer .footer-links{
         display: none;
