@@ -100,8 +100,8 @@ header .header-left > div > div{
     padding-left: 30px;
     padding-right: 10px;
 }
-header .row{
-    gap: 8.5px;
+header .row > div + div{
+    margin: 0 0 0 8.5px;
 }
 header h1{
     font-family: 'Prophet';;
@@ -224,7 +224,9 @@ header .video-title img{
 }
 .sponsor .row:first-of-type{
     padding: 0 10px;
-    gap: 8.5px;
+}
+.sponsor .row:first-of-type > * + *{
+    margin: 0 0 0 8.5px;
 }
 .sponsor h2{
     font-size: 38px;
@@ -358,9 +360,9 @@ body .slider .slide-track:hover{
 .video-section .desktop-textcontainer > div{
     width: 100%;
 }
-.video-section .desktop-textcontainer > div,
-.video-section .row{
-    gap: 8.5px;
+.video-section .text,
+.video-section .desktop-textcontainer > div > div + div{
+    margin: 0 0 0 8.5px;
 }
 .video-section .desktop-textcontainer > div > div{
     width: 50%;
@@ -498,14 +500,8 @@ body .slider .slide-track:hover{
         margin-left: auto;
     }
 }
-@media screen and (max-width: 991px)
-{
-    .projects .quote{
-        margin-bottom: 45px;
-    }
-}
-.projects .project-description{
-    gap: 33px;
+.projects .project-description > * + *{
+    margin-left: 33px;
 }
 .projects .project-description p:first-of-type{
     font-weight: 200;
@@ -548,8 +544,8 @@ body .slider .slide-track:hover{
 .map .map-text{
     padding: 80px 30px 0 30px;
 }
-.map .row{
-    gap: 8.5px;
+.map .row > * + *{
+    margin: 0 0 0 8.5px;
 }
 .map .subtext{
     border-bottom: 1px solid rgba(6, 7, 6, 0.15);
@@ -618,8 +614,8 @@ body .slider .slide-track:hover{
 .help{
     padding: 0 10px;
 }
-.help .row{
-    gap: 8.5px;
+.help .row > * + *{
+    margin: 0 0 0 8.5px;
 }
 .help .col-md{
     position: relative;
@@ -672,7 +668,9 @@ footer{
 }
 footer .row{
     justify-content: space-between;
-    grid-column-gap: 20px;
+}
+footer .row > * + *{
+    margin: 0 0 0 20px;
 }
 footer hr{
     margin: 0;
@@ -682,8 +680,10 @@ footer .row > div:first-of-type{
     display: flex;
     justify-content: space-between;
     max-width: 354px;
-    grid-column-gap: 30px;
     flex-basis: 50%;
+}
+footer .row > div:first-of-type > * + *{
+    margin: 0 0 0 30px;
 }
 footer .row > div:last-of-type{
     display: flex;
@@ -850,6 +850,9 @@ nav.nav-active .navbar-toggler img:first-of-type{
     nav.nav-active .donate, nav.nav-active .navbar-toggler{
         border: 2px solid var(--shayblbn);
     }
+    .projects .project-description > * + * {
+        margin: 33px 0 45px 0;
+    }
 }
 @media screen and (max-width: 767px)
 {
@@ -893,6 +896,21 @@ nav.nav-active .navbar-toggler img:first-of-type{
     }
     .header-video h3{
         font-size: 20px;
+    }
+    header .row > div + div{
+        margin: 8.5px 0 0 0;
+    }
+    .video-section .text{
+        margin: 8.5px 0 0 0 ;
+    }
+    .map .row > * + *{
+        margin: 0 0 8.5px 0;
+    }
+    .help .row > * + *{
+        margin: 8.5px 0 0 0;
+    }
+    .sponsor .row:first-of-type > * + *{
+        margin: 8.5px 0 0 0;
     }
     nav.navbar{
         display: flex;
@@ -978,9 +996,6 @@ nav.nav-active .navbar-toggler img:first-of-type{
         margin-top: 17px;
         margin-bottom: 45px;
         max-width: 100%;
-    }
-    .projects .project-description{
-        gap: 0;
     }
     .progress-container{
         width: 152px;
