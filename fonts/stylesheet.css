@@ -1,0 +1,91 @@
+/*ABC Whyte*/
+@font-face {
+    font-family: 'whytebook';
+    src: url('whyte_book-webfont.woff2') format('woff2'),
+         url('whyte_book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'whyteextralight';
+    src: url('whyte_extralight-webfont.woff2') format('woff2'),
+         url('whyte_extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'whytelight';
+    src: url('whyte_light-webfont.woff2') format('woff2'),
+         url('whyte_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'whyteregular';
+    src: url('whyte_regular-webfont.woff2') format('woff2'),
+         url('whyte_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*ABC Prophet*/
+@font-face {
+    font-family: 'Prophet';
+    src: url('Prophet-Regular.woff2') format('woff2'),
+        url('Prophet-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Prophet';
+    src: url('Prophet-Light.woff2') format('woff2'),
+        url('Prophet-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*ABC Whyte Inktrap*/
+@font-face {
+    font-family: 'whyte_inktrapbook';
+    src: url('whyte_inktrap_book-webfont.woff2') format('woff2'),
+         url('whyte_inktrap_book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'whyte_inktrapregular';
+    src: url('whyte_inktrap_regular-webfont.woff2') format('woff2'),
+         url('whyte_inktrap_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Helvetica Neue*/
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('HelveticaNeue.woff2') format('woff2'),
+        url('HelveticaNeue.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('HelveticaNeue-Light.woff2') format('woff2'),
+        url('HelveticaNeue-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}

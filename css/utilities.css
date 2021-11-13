@@ -1,0 +1,260 @@
+/*general stuff*/
+:root{
+    --shayblbn: #E8E1DD;
+    --shayblbnMobile: #E7E4E1;
+    --dark-body: #2A2A2A;
+    --dark2: #1A1818;
+    --dark3: #060706;
+    --blue: #438CAD;
+    --blue2: #2E7B9D;
+    /*slide width and num of slides(Cards) of sponsor section, the num of slides is modified by JS*/
+    --slide-width: 239px;
+    --slideWidth-mobile: 208px;
+    --slide-num: 5;
+}
+section{
+    margin-bottom: 190px;
+}
+@media screen and (max-width: 767px)
+{
+    section{
+        margin-bottom: 90px;
+    }
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover{
+    color: inherit !important;
+}
+.hover-fade{
+    transition: 300ms opacity ease-in-out;
+}
+.hover-fade:hover{
+    opacity: 50%;
+}
+.donate{
+    color: var(--dark3);
+    font-family: 'whytebook';
+    font-weight: normal;
+    font-size: 14px;
+    border: 2px solid rgba(67, 140, 173, 0.5);
+    width: 98px;
+    height: 49px;
+}
+.donate > div{
+    display: flex;
+    align-items: center;
+}
+.donate i{
+    display: inline-block;
+    margin-right: 7px;
+    height: 100%;
+    font-size: 11px;
+}
+.container-fluid{
+    padding: 0 10px;
+}
+h1, h2, h3, h4, p{
+    margin: 0;
+}
+video{
+    width: 100%;
+    height: auto;
+}
+.slick-slide{
+    height: auto;
+}
+.slick-dots{
+    gap: 4px;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+    .slick-dots{
+        display: flex;
+    }
+}
+.slick-dots .slick-active img:last-of-type{
+    display: inline-block;
+}
+.slick-dots .slick-active img:first-of-type{
+    display: none;
+}
+.slick-dots li:not(.slick-active) img:last-of-type{
+    display: none;
+}
+.more{
+    padding: 28px 30px 22px 30px;
+}
+.more span{
+    color: var(--dark-body);
+    font-size: 12px;
+    line-height: 14.4px;
+    font-family: "whyteregular";
+    font-weight: normal;
+    letter-spacing: -0.03em;
+}
+.c-scrollbar, .scrollbar_thumb{
+    z-index: 10;
+}
+.progress-container{
+    width: 136px;
+    height: 136px;
+    position: relative;
+}
+.progress-container .progress-text span{
+    display: block;
+    font-family: 'Helvetica Neue';
+    font-weight: normal;
+    font-size: 18px;
+    color: var(--blue2);
+    line-height: 33px;
+}
+.progress-container .progress-text span:not(:first-of-type){
+    color: var(--dark-body);
+    opacity: 0.45;
+    line-height: 24px;
+}
+.progress-container .progress-text span:last-of-type{
+    font-size: 14px;
+}
+.progress-container .progress-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+.subtext{
+    font-family: "whytebook";
+    font-size: 10px;
+    line-height: 12px;
+    color: var(--dark3);
+    opacity: 0.15;
+}
+/*prevent scroll when nav is open*/
+body.nav-open{
+    height: 100vh;
+    overflow-y: hidden;
+}
+/*fix for chrome issue with locomotive scroll
+https://github.com/locomotivemtl/locomotive-scroll/issues/361*/
+.has-scroll-smooth div[data-scroll-container]
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+/*tooltip*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    z-index: initial;
+}
+.tooltip .tooltip-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 62px;
+    visibility: hidden;
+    background-color: #fff;
+    color: var(--dark2);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    left: 0;
+    font-family: 'whyte_inktrapbook';
+    font-weight: normal;
+    font-size: 18px;
+    box-shadow: 0px 7px 15px 0px rgba(3,5,4,0.04);
+}
+  
+.tooltip .tooltip-text::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 20%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
+
+/*font stuff*/
+.hn-light{
+    font-family: 'Helvetica Neue';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+}
+.lead-xli{
+    font-family: "whyteextralight";
+    font-weight: 200;
+}
+.lead-li{
+    font-family: "whytelight";
+    font-weight: 300;
+}
+h2{
+    font-family: 'Prophet';
+}
+p{
+    font-family: 'Whyte';
+}
+h1, h2{
+    letter-spacing: -0.04em;
+}
+.ls-30{
+    letter-spacing: -0.03em;
+}
+.ls-40{
+    letter-spacing: -0.04em;
+}
+.quote{
+    font-family: 'Helvetica Neue';
+    font-weight: 300;
+    line-height: 26px;
+    font-size: 16px;
+    opacity: 0.45;
+}
+/*padding and margins*/
+.pl-40{
+    padding-left: 40px;
+}
+.pr-30{
+    padding-right: 30px;
+}
+.gap-20px{
+    gap: 20px;
+}
+
+/*container*/
+@media screen and (max-width: 767px) {
+    .container-fluid{
+        padding: 0 7px;
+    }
+}
+.px-10{
+    padding: 0 10px;
+}
