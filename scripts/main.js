@@ -77,16 +77,6 @@ $(document).ready(function(){
       //avoid rendering progress circle again
       container.el.setAttribute("data-animated", "true");
     }
-    else if(action == "header-update")
-    {
-      if(window.innerWidth >= 768)
-      {
-        $(".header-update li span:first-of-type").fadeIn(500);
-        setTimeout(function() {
-          $(".header-update li span:last-of-type").fadeIn(400);
-        }, 600);
-      }
-    }
   });
   //show nav only when scrolling down
   scroll.on('scroll', (obj) => {
@@ -121,5 +111,12 @@ $(document).ready(function(){
   });
 });
 $(window).on("load", function(){
+  if(window.innerWidth >= 768)
+  {
+    $(".header-update li span:first-of-type").fadeIn(500);
+    setTimeout(function() {
+      $(".header-update li span:last-of-type").fadeIn(400);
+    }, 600);
+  }
   scroll.update();
 });
