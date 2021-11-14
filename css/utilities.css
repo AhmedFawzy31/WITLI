@@ -206,7 +206,13 @@ https://github.com/locomotivemtl/locomotive-scroll/issues/361*/
         visibility: visible;
     }
 }
-
+@media screen and (max-width: 1024px)
+{
+    /* disable tooltip when clicked on large tablets like ipad pro*/
+    .tooltip:active .tooltip-text {
+        visibility: hidden;
+    }
+}
 /*font stuff*/
 .hn-light{
     font-family: 'Helvetica Neue';
