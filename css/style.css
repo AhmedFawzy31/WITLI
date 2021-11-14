@@ -785,7 +785,7 @@ nav.nav-active .navbar-toggler img:first-of-type{
 {
     /*idk if I should change this breakpoint*/
     header .header-left, header .header-video{
-        height: calc(100vh - 10px);
+        height: calc(var(--viewport-height) - 10px);
     }
 }
 @media screen and (min-width: 992px) and (max-width: 1024px)
@@ -930,10 +930,6 @@ nav.nav-active .navbar-toggler img:first-of-type{
     }
     header .header-links-mobile .slick-slide {
         margin-left: 15px;
-    }
-    .header-video .flickity-page-dots{
-        right: 50%;
-        margin-right: calc(54.75px / -2);
     }
     header .header-update li span{
         display: inline;

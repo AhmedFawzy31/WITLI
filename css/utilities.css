@@ -11,6 +11,8 @@
     --slide-width: 239px;
     --slideWidth-mobile: 208px;
     --slide-num: 5;
+    /*fallback for IOS that's modified by JS, vh doesn't work*/
+    --viewport-height: 100vh;
 }
 section{
     margin-bottom: 190px;
@@ -148,7 +150,7 @@ video{
 }
 /*prevent scroll when nav is open*/
 body.nav-open{
-    height: 100vh;
+    height: var(--viewport-height);
     overflow-y: hidden;
 }
 /*fix for chrome issue with locomotive scroll

@@ -7,6 +7,8 @@
 }*/
 let scroll;
 $(document).ready(function(){
+  //set viewport height in css
+  document.documentElement.style.setProperty('--viewport-height', window.innerHeight + "px");
   /*momentum scrolling*/
   scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
@@ -107,6 +109,7 @@ $(document).ready(function(){
   });
   scroll.update();
   $(window).resize(function(){
+    document.documentElement.style.setProperty('--viewport-height', window.innerHeight + "px");
     //throttle window maximize and restore button otherwise function will be fired before window has finished resizing
     setTimeout(function() {
       if($("nav").hasClass("nav-active"))
