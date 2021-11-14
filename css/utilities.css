@@ -71,10 +71,12 @@ video{
     height: auto;
 }
 .slick-dots{
-    gap: 4px;
     position: absolute;
     right: 30px;
     bottom: 30px;
+}
+.slick-dots > * + *{
+    margin-left: 4px;
 }
 @media screen and (min-width: 768px) {
     .slick-dots{
@@ -243,9 +245,6 @@ h1, h2{
 }
 .pr-30{
     padding-right: 30px;
-}
-.gap-20px{
-    gap: 20px;
 }
 
 /*container*/
