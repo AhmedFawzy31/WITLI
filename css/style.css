@@ -31,7 +31,7 @@ nav.navbar .navbar-brand{
     margin: 0;
 }
 body nav.navbar ul a{
-    font-family: 'whytebook';
+    font-family: 'ABC Whyte Book';
     font-size: 18px;
     padding: 0 !important;
 }
@@ -68,8 +68,40 @@ header .header-left{
     background: #EDE7E4;
     position: relative;
 }
-header .header-left .logo{
-    max-width: 50%;
+header .header-left .logo-text{
+    margin-left: 14px;
+}
+header .header-left .logo-text p:first-of-type{
+    font-family: "ABC Prophet";
+    font-weight: normal;
+    color: var(--dark2);
+    font-size: 22px;
+    margin-bottom: 2px;
+}
+header .header-left .logo-text p:last-of-type{
+    font-family: "ABC Whyte Book";
+    font-weight: normal;
+    color: var(--dark3);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    opacity: 0.25;
+}
+nav .logo-text{
+    margin-left: 11px;
+}
+nav .logo-text p:first-of-type{
+    font-family: "ABC Prophet";
+    font-weight: normal;
+    color: var(--dark2);
+    font-size: 18px;
+}
+nav .logo-text p:last-of-type{
+    font-family: "ABC Whyte Book";
+    font-weight: normal;
+    color: var(--dark3);
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    opacity: 0.25;
 }
 header .header-left > div{
     padding-top: 10px;
@@ -84,7 +116,7 @@ header .row > div + div{
     margin: 0 0 0 8.5px;
 }
 header h1{
-    font-family: 'Prophet';;
+    font-family: 'ABC Prophet';;
     font-size: 49px;
     font-weight: 300;
 }
@@ -98,7 +130,7 @@ header .header-links{
     margin-top: 29px;
 }
 header .header-links a{
-    font-family: 'whytelight';
+    font-family: 'ABC Whyte';
     font-weight: 300;
     font-size: 31px;
     color : var(--dark-body);
@@ -137,7 +169,7 @@ header .header-update li{
 }
 header .header-update span:last-of-type{
     color: var(--dark-body);
-    font-weight: 300;
+    font-weight: 200;
 }
 header .header-update ul span:first-of-type{
     position: relative;
@@ -168,14 +200,14 @@ header .header-video .play-control a{
     cursor: pointer;
 }
 .header-video h3{
-    font-family: 'Prophet';
+    font-family: 'ABC Prophet';
     font-weight: normal;
     font-size: 25px;
     margin-top: 13px;
     margin-bottom: 3px;
 }
 .header-video h4{
-    font-family: 'whytebook';
+    font-family: 'ABC Whyte Book';
     font-size: 17px;
     margin: 0;
 }
@@ -205,7 +237,7 @@ header .video-title img{
 }
 .sponsor .see-more p{
     margin-top: 12.5px;
-    font-family: "whytebook";
+    font-family: "ABC Whyte Book";
     font-size: 16px;
     color: var(--dark3);
     line-height: 24px;
@@ -274,13 +306,13 @@ header .video-title img{
     margin-top: 15px;
 }
 .sponsor-slider .sponsor-info h4{
-    font-family: "whytebook";
+    font-family: "ABC Whyte Book";
     font-size: 13px;
     color: var(--dark3);
     margin-bottom: 6px;
 }
 .sponsor-slider .sponsor-info p{
-    font-family: "whytebook";
+    font-family: "ABC Whyte Book";
     font-size: 10px;
     opacity: 0.25;
     color: var(--dark3);
@@ -452,7 +484,7 @@ body .slider .slide-track:hover{
 .projects h3, .projects .project-info{
     position: absolute;
     color: #fff;
-    font-family: "whytebook";
+    font-family: "ABC Whyte Book";
     z-index: 2;
 }
 .projects h3{
@@ -460,6 +492,7 @@ body .slider .slide-track:hover{
     bottom: 42px;
     font-size: 30px;
     letter-spacing: -0.04em;
+    line-height: 1;
 }
 .projects .project-info{
     top: 29px;
@@ -553,7 +586,7 @@ body .slider .slide-track:hover{
     font-size: 26px;
     letter-spacing: -0.04em;
     font-weight: 300;
-    font-family: "whytelight";
+    font-family: "ABC Whyte";
     margin-bottom: 15px;
     color: var(--dark-body);
 }
@@ -562,7 +595,6 @@ body .slider .slide-track:hover{
     line-height: 31px;
     letter-spacing: -0.04em;
     opacity: 0.5;
-    font-weight: 300;
     color: var(--dark-body);
     max-width: 487px;
 }
@@ -578,7 +610,7 @@ body .slider .slide-track:hover{
     margin-bottom: 10px;
 }
 .map .quote-author{
-    font-family: "whytebook";
+    font-family: "ABC Whyte Book";
     font-size: 13px;
     letter-spacing: -0.04em;
     color: var(--dark-body);
@@ -642,7 +674,7 @@ body .slider .slide-track:hover{
 }
 .help .help-text p{
     color: var(--dark-body);
-    font-family: 'Prophet';
+    font-family: 'ABC Prophet';
     font-weight: 300;
     font-size: 30px;
     letter-spacing: -0.04em;
@@ -692,7 +724,7 @@ footer hr{
     opacity: 0.15;
 }
 footer .row > div:first-of-type a{
-    font-family: "whytebook";
+    font-family: "ABC Whyte Book";
     font-size: 15px;
     color: #B7B1AE;
     display: block;
@@ -718,6 +750,16 @@ nav.nav-active .logo-mobile img:first-of-type{
 }
 nav.nav-active .logo-mobile img:last-of-type{
     display: inline;
+}
+nav.nav-active .nav-globe{
+    display: none;
+}
+nav.nav-active .logo-text p{
+    color: var(--shayblbn);
+    opacity: 1;
+}
+nav:not(.nav-active) .nav-globe-light{
+    display: none;
 }
 nav.nav-active .navbar-toggler img:last-of-type{
     display: inline;
@@ -763,6 +805,20 @@ nav.nav-active .navbar-toggler img:first-of-type{
     .video-section p{
         font-size: 24px;
     }
+    header .header-left img{
+        max-width: 30px;
+        height: auto;
+    }
+    header .header-left .logo-text{
+        margin-left: 12px;
+    }
+    header .header-left .logo-text p:first-of-type{
+        font-size: 19px;
+        margin-bottom: 0;
+    }
+    header .header-left .logo-text p:last-of-type{
+        font-size: 10px;
+    }
 }
 @media screen and (min-width: 768px){
     nav.navbar{
@@ -789,7 +845,7 @@ nav.nav-active .navbar-toggler img:first-of-type{
         margin-top: 53px;
     }  
     .navbar-nav .nav-link{
-        font-family: "whytelight";
+        font-family: "ABC Whyte";
         font-size: 30px;
         font-weight: 300;
     }

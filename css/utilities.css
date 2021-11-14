@@ -41,7 +41,7 @@ a:not(footer .hover-fade):hover{
 }
 .donate{
     color: var(--dark3);
-    font-family: 'whytebook';
+    font-family: 'ABC Whyte Book';
     font-weight: normal;
     font-size: 14px;
     border: 2px solid rgba(67, 140, 173, 0.5);
@@ -98,7 +98,7 @@ video{
 .more span{
     color: var(--dark-body);
     font-size: 12px;
-    font-family: "whyteregular";
+    font-family: "ABC Whyte";
     font-weight: normal;
     letter-spacing: -0.03em;
 }
@@ -141,7 +141,7 @@ video{
     display: none;
 }
 .subtext{
-    font-family: "whytebook";
+    font-family: "ABC Whyte Book";
     font-size: 10px;
     color: var(--dark3);
     opacity: 0.15;
@@ -182,7 +182,7 @@ https://github.com/locomotivemtl/locomotive-scroll/issues/361*/
     z-index: 2;
     top: 100%;
     left: 0;
-    font-family: 'whyte_inktrapbook';
+    font-family: 'ABC Whyte Inktrap Book';
     font-weight: normal;
     font-size: 18px;
     box-shadow: 0px 7px 15px 0px rgba(3,5,4,0.04);
@@ -213,18 +213,18 @@ https://github.com/locomotivemtl/locomotive-scroll/issues/361*/
     line-height: 26px;
 }
 .lead-xli{
-    font-family: "whyteextralight";
+    font-family: "ABC Whyte";
     font-weight: 200;
 }
 .lead-li{
-    font-family: "whytelight";
+    font-family: "ABC Whyte";
     font-weight: 300;
 }
 h2{
-    font-family: 'Prophet';
+    font-family: 'ABC Prophet';
 }
 p{
-    font-family: 'Whyte';
+    font-family: 'ABC Whyte';
 }
 h1, h2{
     letter-spacing: -0.04em;
