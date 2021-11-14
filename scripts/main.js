@@ -60,7 +60,7 @@ $(document).ready(function(){
       //fade in text, then animate
       $(container.el.firstElementChild).fadeIn(1000).css("display","flex");;
       var progressCircle = new ProgressBar.Circle(container.el, {
-        strokeWidth: 10,
+        strokeWidth: 9,
         easing: 'easeInOut',
         duration: 2500,
         color: strokeColour,
@@ -109,7 +109,11 @@ $(document).ready(function(){
   $(window).resize(function(){
     //throttle window maximize and restore button otherwise function will be fired before window has finished resizing
     setTimeout(function() {
-      scroll.update()
+      if($("nav").hasClass("nav-active"))
+      {
+        $(".navbar-toggler").trigger("click");
+      }
+      scroll.update();
     }, 150);
   });
 });
