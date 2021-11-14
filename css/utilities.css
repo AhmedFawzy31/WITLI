@@ -30,7 +30,7 @@ a{
     text-decoration: none;
     cursor: pointer;
 }
-a:hover{
+a:not(footer .hover-fade):hover{
     color: inherit !important;
 }
 .hover-fade{
@@ -91,12 +91,11 @@ video{
     display: none;
 }
 .more{
-    padding: 28px 30px 22px 30px;
+    padding: 25px 30px 25px 30px;
 }
 .more span{
     color: var(--dark-body);
     font-size: 12px;
-    line-height: 14.4px;
     font-family: "whyteregular";
     font-weight: normal;
     letter-spacing: -0.03em;
@@ -115,15 +114,17 @@ video{
     font-weight: normal;
     font-size: 18px;
     color: var(--blue2);
-    line-height: 33px;
+}
+.progress-container .progress-text span:first-of-type{
+    margin-bottom: 3px;
 }
 .progress-container .progress-text span:not(:first-of-type){
     color: var(--dark-body);
     opacity: 0.45;
-    line-height: 24px;
 }
 .progress-container .progress-text span:last-of-type{
     font-size: 14px;
+    margin-top: 7px;
 }
 .progress-container .progress-text{
     position: absolute;
@@ -140,7 +141,6 @@ video{
 .subtext{
     font-family: "whytebook";
     font-size: 10px;
-    line-height: 12px;
     color: var(--dark3);
     opacity: 0.15;
 }
