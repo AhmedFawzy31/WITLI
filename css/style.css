@@ -781,7 +781,7 @@ nav.nav-active .navbar-toggler img:first-of-type{
         max-height: 826px;
     }
 }
-@media screen and (min-width: 992px)
+@media screen and (min-width: 768px)
 {
     /*idk if I should change this breakpoint*/
     header .header-left, header .header-video{
