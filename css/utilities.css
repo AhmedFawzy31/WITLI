@@ -198,8 +198,11 @@ https://github.com/locomotivemtl/locomotive-scroll/issues/361*/
     border-style: solid;
     border-color: transparent transparent #fff transparent;
 }
-.tooltip:hover .tooltip-text {
-    visibility: visible;
+@media screen and (min-width: 1024px)
+{
+    .tooltip:hover .tooltip-text {
+        visibility: visible;
+    }
 }
 
 /*font stuff*/
