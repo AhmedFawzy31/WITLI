@@ -1,19 +1,5 @@
-/*general logo styles for nav and header */
-.logo .logo-text{
-    margin-left: 10.6px;
-}
-.logo .logo-text span:first-of-type{
-    font-family: 'Prophet';
-    font-size: 17.7px;
-    font-weight: normal;
-    color: var(--dark2);
-}
-.logo .logo-text span:last-of-type{
-    font-family: 'whytebook';
-    font-size: 9px;
-    letter-spacing: 0.18em;
-    color: #060706;
-    opacity: 0.25;
+body{
+    line-height: 1;
 }
 /*nav*/
 nav .navbar-toggler{
@@ -47,7 +33,7 @@ nav.navbar .navbar-brand{
 body nav.navbar ul a{
     font-family: 'whytebook';
     font-size: 18px;
-    padding: 0;
+    padding: 0 !important;
 }
 body nav:not(.nav-active) ul a{
     color: var(--dark-body);
@@ -63,9 +49,6 @@ body nav:not(.nav-active) ul a{
     }
 }
 /*header*/
-header .logo .logo-text{
-    margin-left: 13.7px;
-}
 header .header-nav{
     position: relative;
 }
@@ -78,18 +61,15 @@ header .header-nav:before{
     left: 0;
     background: rgba(26, 24, 24, 0.07);
 }
-header .logo .logo-text span:first-of-type{
-    font-size: 21.67px;
-}
-header .logo .logo-text span:last-of-type{
-    font-size: 11px;
-}
 header{
     margin: 10px 10px 0 10px;
 }
 header .header-left{
     background: #EDE7E4;
     position: relative;
+}
+header .header-left .logo{
+    max-width: 50%;
 }
 header .header-left > div{
     padding-top: 10px;
@@ -105,9 +85,14 @@ header .row > div + div{
 }
 header h1{
     font-family: 'Prophet';;
-    line-height: 50px;
     font-size: 49px;
     font-weight: 300;
+}
+@media screen and (min-width: 1025px)
+{
+    header h1{
+        line-height: 50px;
+    }
 }
 header .header-links{
     margin-top: 29px;
@@ -118,6 +103,11 @@ header .header-links a{
     font-size: 31px;
     color : var(--dark-body);
     opacity: 0.2;
+}
+@media screen and (min-width: 1024px) {
+    header .header-links a{
+        line-height: 41px;
+    }
 }
 header .header-links a:hover{
     opacity: 1;
@@ -181,8 +171,8 @@ header .header-video .play-control a{
     font-family: 'Prophet';
     font-weight: normal;
     font-size: 25px;
-    margin-bottom: 0;
     margin-top: 13px;
+    margin-bottom: 3px;
 }
 .header-video h4{
     font-family: 'whytebook';
@@ -218,6 +208,7 @@ header .video-title img{
     font-family: "whytebook";
     font-size: 16px;
     color: var(--dark3);
+    line-height: 24px;
 }
 .sponsor .see-more span{
     display: block;
@@ -286,6 +277,7 @@ header .video-title img{
     font-family: "whytebook";
     font-size: 13px;
     color: var(--dark3);
+    margin-bottom: 6px;
 }
 .sponsor-slider .sponsor-info p{
     font-family: "whytebook";
@@ -389,10 +381,6 @@ body .slider .slide-track:hover{
 .video-section .video .more{
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-.video-section .text .subtext,
-.video-section .right-text .subtext{
-    border-bottom: 1px solid rgba(26, 24, 24, 0.4);
-}
 .video-section .text .more,
 .map .more{
     border-top: 1px solid rgba(26, 24, 24, 0.05);
@@ -417,9 +405,14 @@ body .slider .slide-track:hover{
 .video-section .video .text-container{
     position: absolute;
     width: 100%;
-    
     top: 0;
     left: 0;
+    min-height: calc(100% - 62px);
+}
+.video-section .video-text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .video-section .left-text,
 .video-section .video-text,
@@ -558,7 +551,6 @@ body .slider .slide-track:hover{
 }
 .map h2{
     font-size: 26px;
-    line-height: 36px;
     letter-spacing: -0.04em;
     font-weight: 300;
     font-family: "whytelight";
@@ -583,6 +575,7 @@ body .slider .slide-track:hover{
 .map .quote{
     color: var(--dark-body);
     max-width: 456px;
+    margin-bottom: 10px;
 }
 .map .quote-author{
     font-family: "whytebook";
@@ -591,7 +584,6 @@ body .slider .slide-track:hover{
     color: var(--dark-body);
 }
 .map .more{
-    padding-bottom: 22px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -606,9 +598,6 @@ body .slider .slide-track:hover{
 }
 .map .more a{
     color: var(--dark-body);
-}
-.map .progress-container{
-    margin-top: 42px;
 }
 /*help section*/
 .help{
@@ -657,6 +646,7 @@ body .slider .slide-track:hover{
     text-align: center;
     display: inline-block;
     margin-bottom: 24px;
+    line-height: 32px;
 }
 .help .help-text img{
     width: 13px;
@@ -710,6 +700,9 @@ footer .footer-socials a:first-of-type{
 section:last-of-type{
     margin-bottom: 0;
 }
+footer .footer-links a:not(:last-of-type){
+    margin-bottom: 8px;
+}
 /*responsive stuff and fonts*/
 nav .navbar-toggler img:last-of-type{
     display: none;
@@ -730,11 +723,8 @@ nav.nav-active .navbar-toggler img:first-of-type{
     display: none;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    h1, h2{
+    header h1{
         line-height: 1.13em;
-    }
-    p{
-        line-height: 1.25em;
     }
     header .header-links a{
         font-size: 24px;
@@ -759,16 +749,10 @@ nav.nav-active .navbar-toggler img:first-of-type{
         font-size: 40px;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 992px)
+@media screen and (min-width: 768px) and (max-width: 991px)
 {
     header h1{
         font-size: 33px;
-    }
-    header .logo .logo-text span:first-of-type{
-        font-size: 19px;
-    }
-    header .logo .logo-text span:last-of-type{
-        font-size: 10px;
     }
     .sponsor h2{
         font-size: 35px;
@@ -788,6 +772,10 @@ nav.nav-active .navbar-toggler img:first-of-type{
         position: absolute;
         bottom: 0;
     }
+    .video-section .text .subtext,
+    .video-section .right-text .subtext{
+        border-bottom: 1px solid rgba(26, 24, 24, 0.4);
+    }
 }
 @media screen and (max-width: 991px)
 {
@@ -804,10 +792,13 @@ nav.nav-active .navbar-toggler img:first-of-type{
     }
     nav .nav-item{
         margin-right: 0;
-        padding-right: 9px;
+        padding-right: 10px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    nav .nav-item:not(:last-of-type){
+        margin-bottom: 20px;
     }
     nav.navbar:not(.nav-active):not(.scroll){
         background: var(--shayblbnMobile);
@@ -987,9 +978,11 @@ nav.nav-active .navbar-toggler img:first-of-type{
         display: none !important;
     }
     .projects .project-description p{
-        font-size: 20px;
-        line-height: 28px;
         max-width: 100%;
+    }
+    .projects .project-description p:first-of-type{
+        line-height: 28px;
+        font-size: 20px;
     }
     .projects .quote{
         line-height: 26px;
@@ -1059,13 +1052,17 @@ nav.nav-active .navbar-toggler img:first-of-type{
         border-bottom: 0;
     }
     .video-section .video-text, .video-section .more,
-    .video-section .text .text-container > div:nth-of-type(2),
+    .video-section .text .text-container > div:first-of-type,
     .projects .more, .map .more, footer{
         padding-left: 16px;
         padding-right: 16px;
     }
-    .video-section .subtext{
+    .video-section .text .subtext{
         margin-top: 47px;
+    }
+    .video-section .subtext{
+        padding-bottom: 0;
+        border-bottom: none;
     }
     .map .map-text-container{
         order: 2;
@@ -1079,17 +1076,19 @@ nav.nav-active .navbar-toggler img:first-of-type{
     .map .more, .video-section .more{
         margin-top: 45px;
     }
-    .map h2{
-        font-size: 22px;
-        line-height: 30px;
+    .map .subtext{
+        padding-bottom: 0;
+        border-bottom: none;
+        margin-bottom: 30px;
     }
-    .map .col-md > div > div > p{
+    .map .map-text-container .map-text > p{
         font-size: 20px;
-        line-height: 30px;
         max-width: 100%;
     }
+    .map h2{
+        font-size: 22px;
+    }
     .map .quote{
-        line-height: 26px;
         max-width: 100%;
     }
     .map h2{
@@ -1114,6 +1113,10 @@ nav.nav-active .navbar-toggler img:first-of-type{
     }
     footer .row{
         align-items: flex-start;
+    }
+    .help .help-text p{
+        font-size: 27px;
+        line-height: 27px;
     }
 }
 @media screen and (max-width: 340px) {
