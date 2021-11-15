@@ -1184,6 +1184,18 @@ nav.nav-active .navbar-toggler img:first-of-type{
         line-height: 27px;
     }
 }
+@media screen and (min-width: 480px)
+{
+    header .header-links:last-of-type{
+        display: none;
+    }
+}
+@media screen and (max-width: 479px)
+{
+    header .header-links:first-of-type{
+        display: none;
+    }
+}
 @media screen and (max-width: 340px) {
     nav .donate{
         width: 70px;
