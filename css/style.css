@@ -71,6 +71,9 @@ header .header-left{
 header .header-left .logo-text{
     margin-left: 14px;
 }
+header .header-left > div > div{
+    padding-left: 30px;
+}
 header .header-left .logo-text p:first-of-type{
     font-family: "ABC Prophet";
     font-weight: normal;
@@ -781,15 +784,11 @@ nav.nav-active .navbar-toggler img:first-of-type{
         max-height: 826px;
     }
 }
-@media screen and (min-width: 768px)
+@media screen and (min-width: 992px)
 {
     /*idk if I should change this breakpoint for this style*/
     header .header-left, header .header-video{
         height: calc(var(--viewport-height) - 10px);
-    }
-    header .header-left > div > div{
-        padding-left: 30px;
-        padding-right: 10px;
     }
 }
 @media screen and (min-width: 992px) and (max-width: 1024px)
@@ -838,6 +837,9 @@ nav.nav-active .navbar-toggler img:first-of-type{
     .video-section .text .subtext,
     .video-section .right-text .subtext{
         border-bottom: 1px solid rgba(26, 24, 24, 0.4);
+    }
+    header .header-left > div > div{
+        padding-right: 10px;
     }
 }
 @media screen and (max-width: 991px)
@@ -963,7 +965,7 @@ nav.nav-active .navbar-toggler img:first-of-type{
         margin: 8.5px 0 0 0;
     }
     nav.navbar{
-        display: flex;
+        display: flex !important;
         align-items: flex-start;
         width: calc(100% - 14px);
         left: 7px;
