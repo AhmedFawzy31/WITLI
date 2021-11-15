@@ -151,7 +151,10 @@ video{
 /*prevent scroll when nav is open*/
 body.nav-open{
     height: var(--viewport-height);
-    overflow-y: hidden;
+    touch-action: none;
+    -webkit-overflow-scrolling: none;
+    overflow: hidden;
+    overscroll-behavior: none;
 }
 /*fix for chrome issue with locomotive scroll
 https://github.com/locomotivemtl/locomotive-scroll/issues/361*/
