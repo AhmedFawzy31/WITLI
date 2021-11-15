@@ -38,7 +38,7 @@ a:not(footer .hover-fade):hover{
 .hover-fade{
     transition: 300ms opacity ease-in-out;
 }
-.hover-fade:hover{
+.hover-fade:not(nav.nav-active .hover-fade):hover{
     opacity: 50%;
 }
 .donate{

@@ -108,10 +108,6 @@ header .header-left > div{
     padding-bottom: 23px;
     width: 100%;
 }
-header .header-left > div > div{
-    padding-left: 30px;
-    padding-right: 10px;
-}
 header .row > div + div{
     margin: 0 0 0 8.5px;
 }
@@ -697,10 +693,6 @@ footer .row{
 footer .row > * + *{
     margin: 0 0 0 20px;
 }
-footer hr{
-    margin: 0;
-    margin-top: 11px;
-}
 footer .row > div:first-of-type{
     display: flex;
     justify-content: space-between;
@@ -719,6 +711,8 @@ footer .row > div:last-of-type{
 footer hr{
     flex-grow: 1;
     display: inline-block;
+    margin: 0;
+    margin-top: 6px;
     margin-right: 26px;
     color: var(--dark-body);
     opacity: 0.15;
@@ -728,6 +722,12 @@ footer .row > div:first-of-type a{
     font-size: 15px;
     color: #B7B1AE;
     display: block;
+}
+footer .footer-socials{
+    display: flex;
+}
+footer .footer-socials a{
+    max-height: 12px;
 }
 footer .footer-socials a:first-of-type{
     margin-right: 10px;
@@ -783,9 +783,13 @@ nav.nav-active .navbar-toggler img:first-of-type{
 }
 @media screen and (min-width: 768px)
 {
-    /*idk if I should change this breakpoint*/
+    /*idk if I should change this breakpoint for this style*/
     header .header-left, header .header-video{
         height: calc(var(--viewport-height) - 10px);
+    }
+    header .header-left > div > div{
+        padding-left: 30px;
+        padding-right: 10px;
     }
 }
 @media screen and (min-width: 992px) and (max-width: 1024px)
@@ -891,7 +895,7 @@ nav.nav-active .navbar-toggler img:first-of-type{
         background-color: var(--dark2);
         border-bottom: 1px solid rgba(255, 255, 255, 0.07);
     }
-    .nav-active a, .nav-active span{
+    nav.nav-active, .nav-active a, .nav-active span, .nav-active li{
         color: var(--shayblbn);
     }
     .nav-active a, .nav-active span:last-of-type{
@@ -1160,10 +1164,8 @@ nav.nav-active .navbar-toggler img:first-of-type{
         margin-bottom: 11px;
     }
     footer .footer-socials{
-        display: flex;
         align-items: center;
         justify-content: flex-end;
-        
     }
     footer hr, footer .footer-links{
         display: none;

@@ -111,12 +111,14 @@ $(document).ready(function(){
   });
 });
 $(window).on("load", function(){
-  if(window.innerWidth >= 768)
-  {
-    $(".header-update li span:first-of-type").fadeIn(500);
-    setTimeout(function() {
-      $(".header-update li span:last-of-type").fadeIn(400);
-    }, 600);
-  }
+  scroll.on('call', (action, event, container) => {
+    if(window.innerWidth >= 768 && action == "header-update")
+    {
+      $(".header-update li span:first-of-type").fadeIn(500);
+      setTimeout(function() {
+        $(".header-update li span:last-of-type").fadeIn(400);
+      }, 600);
+    }
+  });
   scroll.update();
 });
