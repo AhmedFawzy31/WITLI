@@ -1,0 +1,193 @@
+section:first-of-type{
+    background-color: var(--shayblbn);
+    padding-top: 150px;
+}
+h1, h2, h3{
+    line-height: 1;
+}
+h1{
+    margin-top: 15px;
+}
+hr{
+    width: 100%;
+    color: rgba(6, 7, 6, 0.15);
+}
+.divider1 hr{
+    margin: 80px 0 30px 0;
+}
+.divider hr{
+    margin: 30px 0;
+}
+section:first-of-type .row h2{
+    font-family: "ABC Prophet";
+    font-size: 37px;
+    font-weight: 300;
+    color: var(--darkbody);
+}
+section:first-of-type .row p{
+    font-size: 24px;
+    opacity: 1;
+    line-height: 41px;
+    font-family: "ABC Whyte";
+    font-weight: 300;
+    color: var(--darkbody);
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+section:first-of-type .row:last-of-type{
+    padding-bottom: 30px;
+}
+.bluearrow-btn{
+    height: 75px;
+    padding: 0 25px;
+}
+section:first-of-type .row > div:last-of-type img{
+    width: 100%;
+    object-fit: cover;
+}
+section > div > .subtext{
+    font-family: "ABC Prophet";
+    font-weight: 300;
+    font-size: 24px;
+}
+@media screen and (max-width: 991px)
+{
+    .px-30-16{
+        padding-right: 30px;
+    }
+}
+@media screen and (min-width:480px) and (max-width: 575px)
+{
+    h1{
+        font-size: 48px !important;
+    }
+}
+@media screen and (max-width: 767px)
+{
+    section:first-of-type{
+        background-color: var(--shayblbnMobile);
+    }
+    .px-30-16{
+        padding-right: 16px;
+    }
+}
+@media screen and (min-width: 992px)
+{
+    section:first-of-type .row > div:last-of-type{
+        margin-left: 100px;
+    }
+    section:first-of-type .row > div:first-of-type div{
+        max-width: 591px;
+    }
+    nav:not(.scroll) .navbar-nav li:nth-of-type(3){
+        position: relative;
+    }
+    nav:not(.scroll) .navbar-nav li:nth-of-type(3):before {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: var(--dark-body);
+        opacity: 0.25;
+        position: absolute;
+        bottom: -31px;
+    }
+    section:first-of-type .row > div:last-of-type img:not(.trip-img){
+        max-height: none;
+    }
+    img.trip-img{
+        max-height: 488px;
+    }
+}
+@media screen and (max-width: 479px)
+{
+    section:first-of-type h1, section:first-of-type .row h2{
+        font-size: 35px;
+    }
+    section:first-of-type p{
+        font-size: 24px !important;
+    }
+}
+/*bro*/
+section:first-of-type .row .event-details p{
+    margin-top: 0px;
+    margin-bottom: 0;
+    font-size: 33px;
+    font-family: "ABC Prophet";
+    font-weight: 300;
+    letter-spacing: -0.04em;
+}
+.event-details .subtext{
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-family: "Helvetica Neue";
+    font-size: 20px;
+    font-weight: 300;
+}
+.event-details .row{
+    margin-bottom: 40px;
+}
+.event-details img{
+    max-width: 14px;
+    margin-right: 8px;
+}
+.px-30-16{
+    padding-right: 0;
+}
+@media screen and (min-width: 992px)
+{
+    section:first-of-type .row > div:last-of-type img{
+        max-height: none;
+    }
+}
+@media screen and (max-width: 991px)
+{
+    section:first-of-type .row p{
+        margin-bottom: 50px;
+    }
+    .px-30-16{
+        padding-right: 30px;
+    }
+    .event-text{
+        order: 2;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 767px)
+{
+    .px-30-16{
+        padding-right: 16px;
+    }
+}
+@media screen and (max-width: 575px)
+{
+    .event-info{
+        margin-bottom: 20px;
+    }
+    .event-details > .row:last-of-type > div:last-of-type .event-info{
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: 992px)
+{
+    nav:not(.scroll) .navbar-nav li:nth-of-type(2){
+        position: relative;
+    }
+    nav:not(.scroll) .navbar-nav li:nth-of-type(2):before {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: var(--dark-body);
+        opacity: 0.25;
+        position: absolute;
+        bottom: -31px;
+    }
+}
+nav:not(.scroll) .navbar-nav li:nth-of-type(3):before{
+    content: none;
+}
+@media screen and (min-width: 992px) and (max-width: 1023px)
+{
+    section:first-of-type .row .event-details p{
+        font-size: 31px;
+    }
+}

@@ -1,0 +1,118 @@
+h1, h2, h3{
+    line-height: 1;
+}
+h1{
+    font-size: 49px;
+    letter-spacing: -0.04em;
+    font-family: "ABC Prophet";
+    font-weight: 300;
+}
+h2{
+    font-family: "ABC Whyte";
+    font-size: 31px;
+    font-weight: 300;
+}
+section:first-of-type{
+    background-color: var(--shayblbn);
+    padding-top: 150px;
+    padding-bottom: 75px;
+}
+section:first-of-type > * + *{
+    margin-top: 35px;
+}
+section:first-of-type .story-text > * + *{
+    margin-top: 35px;
+}
+section:first-of-type .story-text p{
+    padding-right: 30px;
+    max-width: 1047px;
+    font-size: 17px;
+    font-family: 'Helvetica Neue';
+    font-weight: normal;
+    opacity: 0.8;
+    color: var(--dark2);
+    line-height: 25px;
+}
+.subtext{
+    font-size: 24px;
+    font-family: 'ABC Prophet';
+    letter-spacing: -0.04em;
+    font-weight: 300;
+    line-height: 1;
+}
+.story-text h3{
+    font-size: 17px;
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    opacity: 0.8;
+    color: var(--dark2);
+}
+.story-video{
+    position: relative;
+    cursor: pointer;
+}
+.story-video img{
+    width: 100%;
+    object-fit: cover;
+}
+.story-video .icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.9;
+}
+.story-video .icon i{
+    font-size: 70px;
+    transition: 300ms all ease-in-out;
+}
+.story-video .icon:before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    z-index: -1;
+}
+.story-video:hover .icon i{
+    color: #FF0000;
+    opacity: 1;
+}
+.how img{
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+}
+.story-video img{
+    max-height: calc((var(--viewport-height)) - 79px);
+}
+@media screen and (min-width: 768) and (max-width: 991px)
+{
+    .story-video img{
+        max-height: calc((var(--viewport-height)) - 70px);
+    }
+}
+@media screen and (max-width: 767px)
+{
+    section:first-of-type{
+        background-color: var(--shayblbnMobile);
+    }
+}
+@media screen and (min-width: 992px)
+{
+    nav:not(.scroll) .navbar-nav li:first-of-type{
+        position: relative;
+    }
+    nav:not(.scroll) .navbar-nav li:first-of-type:before {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: var(--dark-body);
+        opacity: 0.25;
+        position: absolute;
+        bottom: -31px;
+    }
+}

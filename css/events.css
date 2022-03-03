@@ -1,0 +1,22 @@
+.subtext{
+    font-size: 18px;
+    margin-top: 10px;
+}
+@media screen and (min-width: 992px)
+{
+    nav:not(.scroll) .navbar-nav li:nth-of-type(2){
+        position: relative;
+    }
+    nav:not(.scroll) .navbar-nav li:nth-of-type(2):before {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: var(--dark-body);
+        opacity: 0.25;
+        position: absolute;
+        bottom: -31px;
+    }
+}
+nav:not(.scroll) .navbar-nav li:nth-of-type(3):before{
+    content: none;
+}

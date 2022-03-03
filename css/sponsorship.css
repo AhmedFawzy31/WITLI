@@ -1,0 +1,185 @@
+h1, h2, h3{
+    line-height: 1;
+}
+section:first-of-type{
+    background-color: var(--shayblbn);
+    padding-top: 130px;
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+.subtext{
+    letter-spacing: -0.04em;
+    font-family: "Helvetica Neue";
+    font-weight: 300;
+}
+section:first-of-type .row > div:last-of-type{
+    max-width: 453px;
+}
+section:first-of-type .row > div:last-of-type img{
+    max-height: 100%;
+    max-width: 100%;
+}
+section:first-of-type a{
+    font-size: 30px;
+    color: var(--darkbody);
+    letter-spacing: -0.04em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 130px;
+    border: 1px solid rgba(67, 140, 173, 0.5);
+}
+section:first-of-type a span{
+    display: inline-block;
+    margin-bottom: 12px;
+}
+section:first-of-type .sponsorship-info{
+    margin: 50px 0;
+}
+section:first-of-type .sponsorship-info .subtext{
+    font-size: 20px;
+}
+section:first-of-type .sponsorship-info p{
+    font-size: 35px;
+    font-weight: 300;
+    font-family: "ABC Prophet";
+    margin-top: 10px;
+}
+section:first-of-type .sponsorship-name h1{
+    margin-bottom: 5px;
+    font-size: 49px;
+}
+section:first-of-type .sponsorship-name h4{
+    font-size: 19px;
+    letter-spacing: -0.04em;
+}
+section:first-of-type .sponsorship-name h1, section:first-of-type .sponsorship-name h4{
+    font-family: "ABC Prophet";
+    font-weight: 300;
+}
+section:first-of-type h2.subtext{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-family: "ABC Prophet";
+    font-weight: 300;
+}
+.sponsor{
+    margin-top: 65px;
+    padding-bottom: 19px;
+}
+@media screen and (min-width: 768px) and (max-width:991px) {
+    section:first-of-type h2.subtext{
+        font-size: 22px;
+    }
+    section:first-of-type .sponsorship-name h1{
+        font-size: 30px;
+    }   
+    section:first-of-type .row > div:last-of-type{
+        margin-left: 50px;
+    }
+    section:first-of-type .sponsorship-name h4{
+        font-size: 16px;
+    }
+    section:first-of-type .sponsorship-info p{
+        font-size: 22px;
+    }
+    section:first-of-type .sponsorship-info .subtext{
+        font-size: 20px;
+    }
+    section:first-of-type a{
+        font-size: 22px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width:1024px) {
+    section:first-of-type .sponsorship-name h1{
+        font-size: 43px;
+    }   
+    section:first-of-type .sponsorship-info p{
+        font-size: 30px;
+    }
+    section:first-of-type a{
+        font-size: 28px;
+    }
+}
+@media screen and (min-width: 768px) {
+    section:first-of-type .row > div:last-of-type{
+        text-align: right;
+        margin-left: 50px;
+    }
+    section:first-of-type .row > div:first-of-type{
+        max-width: 558px;
+    }
+    .sponsor .row:first-of-type > div:first-of-type > div{
+        padding-left: 30px;
+    }
+    .sponsor .section-intro p{
+        margin-left: auto;
+    }
+}
+@media screen and (max-width: 767px)
+{
+    section:first-of-type{
+        background-color: var(--shayblbnMobile);
+    }
+    section:first-of-type .row > div:first-of-type{
+        order: 2;
+    }
+    .sponsor-card{
+        border: 1px solid #707070;
+        padding: 10px 10px 15px 10px;
+        margin-left: 16px;
+    }
+    .sponsor-card h3, .sponsor-card h4{
+        font-family: "ABC Prophet";
+        font-weight: 300;
+    }
+    .sponsor-card h3{
+        margin: 15px 0 10px 0;
+        font-size: 37px;
+    }
+    .sponsor-card h4{
+        font-size: 16px;
+    }
+    section:first-of-type h2.subtext{
+        font-size: 30px;
+        margin-left: 16px;
+    }
+    section:first-of-type .sponsorship-name h1{
+        font-size: 30px;
+    }   
+    section:first-of-type .sponsorship-info p{
+        font-size: 22px;
+    }
+    section:first-of-type .sponsorship-info .subtext{
+        font-size: 20px;
+    }
+    section:first-of-type a{
+        font-size: 22px;
+    }
+    section:first-of-type > .row{
+        padding-right: 16px;
+    }
+}
+@media screen and (max-width: 575px)
+{
+    .sponsor-card h3{
+        font-size: 26px;
+    }
+}
+@media screen and (min-width: 992px)
+{
+    nav:not(.scroll) .navbar-nav li:nth-of-type(4){
+        position: relative;
+    }
+    nav:not(.scroll) .navbar-nav li:nth-of-type(4):before {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: var(--dark-body);
+        opacity: 0.25;
+        position: absolute;
+        bottom: -31px;
+    }
+}

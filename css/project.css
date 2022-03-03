@@ -1,0 +1,236 @@
+section:first-of-type{
+    background-color: var(--shayblbn);
+    padding-top: 150px;
+    padding-bottom: 75px;
+}
+h1, h2, h3{
+    line-height: 1;
+}
+section:first-of-type .row{
+    padding-right: 30px;
+}
+@media screen and (max-width:767px) {
+    section:first-of-type{
+        background-color: var(--shayblbnMobile);
+    }
+    section:first-of-type .row{
+        padding-right: 16px;
+    }
+}
+section:first-of-type .progress-container{
+    width: 280px;
+    height: 280px;
+}
+section:first-of-type .progress-container .progress-text span{
+    line-height: 1;
+    font-size: 38px;
+    margin-bottom: 7px;
+}
+section:first-of-type .progress-container .progress-text span:not(:first-of-type){
+    font-size: 30px;
+}
+section:first-of-type .progress-container .progress-text span:last-of-type{
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+section:first-of-type .subtext{
+    font-family: "ABC Prophet";
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -0.04em;
+    color: var(--dark-body);
+}
+section:first-of-type h1{
+    font-size: 49px;
+    letter-spacing: -0.04em;
+    font-family: "ABC Prophet";
+    font-weight: 300;
+    letter-spacing: -0.04em;
+    color: var(--dark-body);
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+section:first-of-type p:first-of-type{
+    font-size: 23px;
+    line-height: 32px;
+    color: var(--dark-body);
+    font-weight: 200;
+    font-family: "ABC Whyte";
+}
+section:first-of-type p span{
+    font-weight: 300;
+    color: var(--blue2);
+}
+section:first-of-type .quote{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+section:first-of-type .bluearrow-btn{
+    padding: 0 25px;
+    height: 80px;
+}
+.projects{
+    border: 0;
+}
+.projects h3{
+    font-size: 16px;
+    font-family: "ABC Whyte";
+    font-weight: 300;
+    bottom: 17px;
+    display: flex;
+    align-items: center;
+}
+.projects h3 img{
+    display: inline-block;
+    margin-right: 5px;
+}
+/*phases*/
+.phases .progress-container{
+    width: 175px;
+    height: 175px;
+}
+.phase-text-container{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.phases .row:last-of-type .phase-text-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.phases .phase-img img{
+    width: 100%;
+    padding: 10px 10px 10px 0;
+    object-fit: cover;
+}
+.phases h3{
+    font-family: 'Helvetica Neue';
+    font-weight: 300;
+    font-size: 16px;
+}
+.phases h3 span{
+    font-weight: 500;
+}
+.phases .phase-text p{
+    font-family: "ABC Whyte";
+    font-weight: 200;
+    font-size: 23px;
+    margin-top: 20px;
+    line-height: 32px;
+}
+.phases .phase-text p span{
+    font-weight: 300;
+    color: var(--blue2);
+}
+.phases .progress-container .progress-text span{
+    line-height: 1;
+    font-size: 22px;
+}
+.phases .progress-container .progress-text span:not(:first-of-type){
+    font-size: 18px;
+}
+.phases > .row:first-of-type{
+    border: 1px solid #060706;
+    margin-bottom: 10px;
+}
+.phases > .row:last-of-type > div:first-of-type{
+    border: 1px solid #060706;
+}
+.phases > .row:last-of-type > div:last-of-type{
+    display: flex;
+}
+.phases > .row:last-of-type > div:last-of-type > div{
+    display: flex;
+    width: 100%;
+}
+.phases .bluearrow-btn{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border: 2px solid rgba(67, 140, 173, 0.5);
+}
+.phases .bluearrow-btn span{
+    display: inline-block;
+    margin-bottom: 25px;
+}
+@media screen and (min-width: 768px)
+{
+    .phases .phase-text{
+        max-width: 50%;
+    }
+    .phase-text-container{
+        align-items: center;
+    }
+}
+@media screen and (min-width: 992px)
+{
+    .phases .phase-text{
+        max-width: 322px;
+    }
+    section:first-of-type .progress-container{
+        margin-left: auto;
+    }
+    .phases > .row > div + div{
+        padding-left: 10px;
+    }
+    .phases .progress-container{
+        margin: auto;
+    }
+    nav:not(.scroll) .navbar-nav li:nth-of-type(5){
+        position: relative;
+    }
+    nav:not(.scroll) .navbar-nav li:nth-of-type(5):before {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: var(--dark-body);
+        opacity: 0.25;
+        position: absolute;
+        bottom: -31px;
+    }
+}
+@media screen and (max-width: 767px)
+{
+    .phase-text-container{
+        flex-direction: column;
+        padding-right: 16px;
+    }
+    .phases .progress-container{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 991px)
+{
+    .phases .phase-text-container{
+        justify-content: space-between;
+        padding-right: 30px;
+    }
+    .phases .phase-img img{
+        padding: 0 10px 10px 10px;
+    }
+    .phases .bluearrow-btn{
+        padding: 30px 0;
+    }
+    .phases > .row:last-of-type > div:first-of-type{
+        margin-bottom: 10px;
+    }
+    section:first-of-type .progress-container{
+        margin-top: 50px;
+    }
+    .phases .row:first-of-type .phase-text-container{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width: 479px)
+{
+    section:first-of-type h1{
+        font-size: 35px;
+    }
+    section:first-of-type p:first-of-type{
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,197 @@
+.shayblbn{
+    background-color: var(--shayblbn);
+}
+h1, h2, h3{
+    line-height: 1;
+}
+section:first-of-type .shayblbn{
+    padding-top: 150px;
+}
+.px-30-16{
+    padding-right: 30px;
+}
+hr{
+    color: rgba(6, 7, 6, 0.15);
+    margin: 70px 0;
+}
+section p{
+    font-family: "Helvetica Neue";
+    color: var(--dark2);
+    opacity: 0.8;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 25px;
+}
+section:not(:last-of-type){
+    margin-bottom: 150px;
+}
+.accordion-item{
+    background: transparent;
+    border: 0;
+}
+.accordion-button{
+    background: transparent;
+    outline: 0;
+    border: 0;
+    color: var(--blue2);
+    padding: 0;
+    height: 75px;
+    font-family: "ABC Whyte";
+    font-weight: normal;
+    font-size: 12px;
+}
+.accordion-header{
+    border-top: 1px solid rgba(26, 24, 24, 0.05);
+}
+.accordion-button::after, .accordion-button:not(.collapsed)::after{
+    background-image: url("../images/arrow-down.svg");
+    background-size: 10px;
+    background-position: center;
+}
+.accordion-button:not(.collapsed){
+    color: var(--blue2);
+    background-color: transparent;
+    box-shadow: none;
+}
+.accordion-button:focus{
+    box-shadow: none;
+    border-color: rgba(26, 24, 24, 0.05);
+}
+.accordion-body{
+    padding: 0;
+    padding-bottom: 65px;
+}
+.accordion-button.collapsed span:last-of-type{
+    display: none;
+}
+.accordion-button:not(.collapsed) span:first-of-type{
+    display: none;
+}
+section .subtext{
+    font-family: "ABC Prophet";
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -0.04em;
+    color: var(--dark-body);
+}
+section h1{
+    font-family: "ABC Prophet";
+    color: var(--dark-body);
+    font-size: 49px;
+    font-weight: 300;
+    letter-spacing: -0.04em;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+section h2{
+    font-family: "ABC Whyte";
+    font-weight: 300;
+    font-size: 31px;
+    color: var(--dark-body);
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+.community-intro > div:first-of-type p{
+    margin-bottom: 30px;
+    max-width: 1017px;
+}
+.population-info{
+    justify-content: space-between;
+    margin-bottom: 0 !important;
+}
+.population-info > div:last-of-type p{
+    max-width: 567px;
+}
+.population-info p span{
+    font-weight: 500;
+}
+.accordion-body h3{
+    font-family: "ABC Whyte";
+    font-weight: 300;
+    font-size: 25px;
+    opacity: 0.8;
+    color: var(--dark-body);
+    margin-bottom: 30px;
+}
+.accordion-body .row:not(:last-of-type){
+    margin-bottom: 50px;
+}
+.accordion-body .row:nth-of-type(2){
+    margin-bottom: 30px;
+}
+.accordion-body .health{
+    display: inline-block;
+    margin-top: 30px;
+}
+.accordion-body a{
+    color: #2E7B9D;
+}
+.projects{
+    margin-left: 0;
+    margin-right: 0;
+}
+.projects h3{
+    font-size: 16px;
+    font-family: "ABC Whyte";
+    font-weight: 300;
+    bottom: 17px;
+    display: flex;
+    align-items: center;
+}
+.projects h3 img{
+    display: inline-block;
+    margin-right: 5px;
+}
+.projects{
+    border: 0;
+}
+section:not(:first-of-type) .shayblbn{
+    padding-top: 50px;
+}
+@media screen and (max-width: 767px)
+{
+    .shayblbn{
+        background-color: var(--shayblbnMobile);
+    }
+    .px-30-16{
+        padding-right: 16px;
+    }
+    .population-info > div:last-of-type p{
+        max-width: 100%;
+    }
+    section .row > div:not(:last-of-type){
+        margin-bottom: 50px;
+    }
+    .accordion-body h3{
+        margin-bottom: 15px;
+    }
+    hr{
+        margin: 50px 0;
+    }
+}
+@media screen and (min-width: 768px){
+    .accordion-body .row > div + div{
+        margin-left: 50px;
+    }
+}
+@media screen and (min-width: 992px)
+{
+    nav:not(.scroll) .navbar-nav li:first-of-type{
+        position: relative;
+    }
+    nav:not(.scroll) .navbar-nav li:first-of-type:before {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: var(--dark-body);
+        opacity: 0.25;
+        position: absolute;
+        bottom: -31px;
+    }
+}
+@media screen and (max-width: 479px)
+{
+    section h1{
+        font-size: 43px;
+    }
+}

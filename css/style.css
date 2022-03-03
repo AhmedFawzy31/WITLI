@@ -1,56 +1,9 @@
-body{
-    line-height: 1;
-}
-/*nav*/
-nav .navbar-toggler{
-    border: 2px solid rgba(67, 140, 173, 0.5);
-    border-radius: 0;
-}
-nav .navbar-toggler:focus{
-    box-shadow: none;
-}
-nav.navbar{
-    padding: 20px 40px 20px 40px;
-    z-index: 5;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-nav.scroll{
-    background: #fff;
-    box-shadow: 0px 7px 15px 0px rgba(3,5,4,0.04);
-}
-nav ul li{
-    margin-right: 30px;
-}
-nav ul li:last-of-type{
-    margin-right: 0;
-}
-nav.navbar .navbar-brand{
-    padding: 0;
-    margin: 0;
-}
-body nav.navbar ul a{
-    font-family: 'ABC Whyte Book';
-    font-size: 18px;
-    padding: 0 !important;
-}
-body nav:not(.nav-active) ul a{
-    color: var(--dark-body);
-}
-@media screen and (min-width: 992px){
-    nav .nav-btn{
-        order: 3;
-    }
-}
-@media screen and (max-width: 991px){
-    nav .donate{
-        margin-right: 10px;
-    }
-}
 /*header*/
 header .header-nav{
     position: relative;
+}
+header .header-links{
+    margin-top: 29px;
 }
 header .header-nav:before{
     content: '';
@@ -89,23 +42,6 @@ header .header-left .logo-text p:last-of-type{
     letter-spacing: 0.18em;
     opacity: 0.25;
 }
-nav .logo-text{
-    margin-left: 11px;
-}
-nav .logo-text p:first-of-type{
-    font-family: "ABC Prophet";
-    font-weight: normal;
-    color: var(--dark2);
-    font-size: 18px;
-}
-nav .logo-text p:last-of-type{
-    font-family: "ABC Whyte Book";
-    font-weight: normal;
-    color: var(--dark3);
-    font-size: 9px;
-    letter-spacing: 0.18em;
-    opacity: 0.25;
-}
 header .header-left > div{
     padding-top: 10px;
     padding-bottom: 23px;
@@ -125,33 +61,7 @@ header h1{
         line-height: 50px;
     }
 }
-header .header-links{
-    margin-top: 29px;
-}
-header .header-links a{
-    font-family: 'ABC Whyte';
-    font-weight: 300;
-    font-size: 31px;
-    color : var(--dark-body);
-    opacity: 0.2;
-}
-@media screen and (min-width: 1024px) {
-    header .header-links a{
-        line-height: 41px;
-    }
-}
-header .header-links a:hover{
-    opacity: 1;
-}
-header .header-links ul:first-of-type{
-    margin-right: 44px;
-}
-header .header-links-mobile .slick-slide{
-    margin-left: 20px;
-}
-header .header-links-mobile a{
-    font-size: 27px;
-}
+
 header .header-update li{
     color: var(--blue);
     font-size: 12px;
@@ -233,322 +143,6 @@ header .video-title img{
 /*sponsorship*/
 .sponsor{
     margin-top: 103px;
-}
-.sponsor .see-more p{
-    margin-top: 12.5px;
-    font-family: "ABC Whyte Book";
-    font-size: 16px;
-    color: var(--dark3);
-    line-height: 24px;
-}
-.sponsor .see-more span{
-    display: block;
-}
-.sponsor .row:first-of-type{
-    padding: 0 10px;
-}
-.sponsor .row:first-of-type > * + *{
-    margin: 0 0 0 8.5px;
-}
-.sponsor h2{
-    font-size: 38px;
-    line-height: 47px;
-    font-weight: 300;
-    max-width: 497px;
-    margin-right: 30px;
-}
-.sponsor .section-intro p{
-    font-size: 23px;
-    line-height: 32px;
-    max-width: 469px;
-}
-.sponsor .section-intro span{
-    color: var(--blue2);
-}
-/*sponsorship slider*/
-.slider{
-    padding-top: 60px;
-	margin: auto;
-	position: relative;
-}
-.sponsor-slider{
-    width: 100%;
-}
-.sponsor-slider .slider{
-    overflow: hidden;
-}
-.sponsor-slider .slide{
-    padding: 8px 8px 13px 8px;
-    border: 1px solid #707070;
-    margin: auto;
-    width: 231px;
-    display: block;
-}
-.sponsor-slider .see-more{
-    display: flex;
-}
-.sponsor-slider .see-more .wrapper{
-    padding: 8px;
-    background: rgba(232, 225, 221, 0.5);
-    background-clip: content-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.sponsor-slider .sponsor-img{
-    max-width: 213px;
-    max-height: 264px;
-}
-.sponsor-slider .sponsor-info{
-    margin-top: 15px;
-}
-.sponsor-slider .sponsor-info h4{
-    font-family: "ABC Whyte Book";
-    font-size: 13px;
-    color: var(--dark3);
-    margin-bottom: 6px;
-}
-.sponsor-slider .sponsor-info p{
-    font-family: "ABC Whyte Book";
-    font-size: 10px;
-    opacity: 0.25;
-    color: var(--dark3);
-}
-.sponsor-slider .slide-container{
-    transition: 300ms ease-in-out;
-    /*for hover effect */
-    position: relative;
-    bottom: 0;
-}
-/*sponsor carousel animation, the slide-num variable is modified by JS*/
-@keyframes scroll {
-	0% {
-		transform: translateX(0);
-	}
-
-	100% {
-		transform: translateX(calc(var(--slide-width) * -1 * var(--slide-num)));
-	}
-}
-@keyframes scrollMobile {
-	0% {
-		transform: translateX(0);
-	}
-
-	100% {
-		transform: translateX(calc(var(--slideWidth-mobile) * -1 * var(--slide-num)));
-	}
-}
-.slider .slide-track.animate {
-	animation: scroll 50s linear infinite;
-	width: calc(var(--slide-width) * ((var(--slide-num)) * 2));
-}
-.slider .slide-container {
-	width: var(--slide-width);
-}
-body .slider .slide-track:hover{
-    animation-play-state: paused;
-}
-.slide-container:hover{
-    bottom: 8px;
-    opacity: 1;
-    z-index: 3;
-}
-.slide-container.blur:not(:hover){
-    opacity: 0.5;
-}
-/*projects section*/
-
-/*video section*/
-.video-section{
-    padding: 0 10px;
-}
-.video-section video{
-    max-height: 826px;
-    object-fit: cover;
-}
-.video-section .row{
-    position: relative;
-}
-.video-section .desktop-textcontainer{
-    position: absolute;
-    left: 0;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
-}
-.video-section .desktop-textcontainer > div{
-    width: 100%;
-}
-.video-section .text,
-.video-section .desktop-textcontainer > div > div + div{
-    margin: 0 0 0 8.5px;
-}
-.video-section .desktop-textcontainer > div > div{
-    width: 50%;
-}
-.video-section .text{
-    position: relative;
-    border: 1px solid rgba(6, 7, 6, 0.25);
-}
-.video-section .text p{
-    max-width: 513px;
-}
-.video-section .right-text p{
-    max-width: 513px;
-}
-.video-section p{
-    font-size: 26px;
-    line-height: 36px;
-}
-.video-section .subtext{
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    margin-bottom: 20.5px;
-}
-.video-section .video .more{
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-.video-section .text .more,
-.map .more{
-    border-top: 1px solid rgba(26, 24, 24, 0.05);
-}
-.video-section .more{
-    width: 100%;
-    z-index: 3;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-.video-section .video .more{
-    position: absolute;
-    bottom: 0;
-}
-/*.video-section .text-container,
-.video-section .desktop-textcontainer > div > div{
-    
-}*/
-.video-section .video, .video-section .text{
-    position: relative;
-}
-.video-section .video .text-container{
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    min-height: calc(100% - 62px);
-}
-.video-section .video-text{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.video-section .left-text,
-.video-section .video-text,
-.video-section .right-text,
-.video-section .text .text-container > div:nth-of-type(2),
-.video-section .more {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-.video-section .video .text-container > div:last-of-type{
-    z-index: 3;
-}
-.video-section .video p, .video-section .left-text p,
-.video-section .video span, .video-section .left-text span,
-.video-section .video .subtext, .video-section .left-text .subtext{
-    color: #fff;
-    opacity: 1;
-}
-.video-section .video p,
-.video-section .left-text p{
-    max-width: 464px;
-}
-/* projects*/
-.projects{
-    border: 1px solid #060706;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.projects .slides-container{
-    position: relative;
-}
-.projects .slide img{
-    max-height: 285px;
-    object-fit: cover;
-    width: 100%;
-}
-.projects h3, .projects .project-info{
-    position: absolute;
-    color: #fff;
-    font-family: "ABC Whyte Book";
-    z-index: 2;
-}
-.projects h3{
-    left: 30px;
-    bottom: 42px;
-    font-size: 30px;
-    letter-spacing: -0.04em;
-    line-height: 1;
-}
-.projects .project-info{
-    top: 29px;
-    left: 30px;
-    font-size: 11px;
-    width: 104px;
-    height: 24px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--blue2);
-}
-.projects .wrapper{
-    padding: 0 10px;
-}
-.projects .projects-text{
-    padding: 41px 30px 0 30px;
-}
-@media screen and (min-width: 992px) {
-    .projects .quote{
-        margin-right: 33px;
-    }
-    .projects .project-description p:first-of-type{
-        max-width: 319px;
-    }
-    .projects .quote{
-        max-width: 456px;
-    }
-    .projects .progress-container{
-        margin-left: auto;
-    }
-}
-.projects .project-description > * + *{
-    margin-left: 33px;
-}
-.projects .project-description p:first-of-type{
-    font-weight: 200;
-    font-size: 23px;
-    line-height: 32px;
-}
-.projects .project-description span{
-    font-weight: 300;
-    color: var(--blue2);
-}
-.projects .more{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 69px;
-    border-top: 1px solid rgba(26, 24, 24, 0.05);
-    padding-left: 30px;
-    padding-right: 30px;
-}
-.projects .more img{
-    width: auto;
-    object-fit: contain;
 }
 /*map section*/
 .map{
@@ -633,181 +227,31 @@ body .slider .slide-track:hover{
 .map .progress-container{
     margin-left: 30px;
 }
-/*help section*/
-.help{
-    padding: 0 10px;
-}
-.help .row > * + *{
-    margin: 0 0 0 8.5px;
-}
-.help .col-md{
-    position: relative;
-}
-.help .col-md::before{
-    content: '';
-    width: 100%;
-    min-height: 100%;
-    max-height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(238, 231, 227, 0.9);
-}
-.help .col-md:last-of-type::before{
-    background-color: rgba(238, 231, 227, 0.95);   
-}
-.help .col-md > img{
-    max-height: 303px;
-    object-fit: cover;
-    width: 100%;
-}
-.help .help-text{
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-}
-.help .help-text p{
-    color: var(--dark-body);
-    font-family: 'ABC Prophet';
-    font-weight: 300;
-    font-size: 30px;
-    letter-spacing: -0.04em;
-    text-align: center;
-    display: inline-block;
-    margin-bottom: 24px;
-    line-height: 32px;
-}
-.help .help-text img{
-    width: 13px;
-    height: auto;
-}
-/*footer*/
-footer{
-    padding: 46px 40px 38px 40px;
-}
-footer .row{
-    justify-content: space-between;
-}
-footer .row > * + *{
-    margin: 0 0 0 20px;
-}
-footer .row > div:first-of-type{
-    display: flex;
-    justify-content: space-between;
-    max-width: 354px;
-    flex-basis: 50%;
-}
-footer .row > div:first-of-type > * + *{
-    margin: 0 0 0 30px;
-}
-footer .row > div:last-of-type{
-    display: flex;
-    justify-content: flex-end;
-    flex-grow: 1;
-    width: auto;
-}
-footer hr{
-    flex-grow: 1;
-    display: inline-block;
-    margin: 0;
-    margin-top: 6px;
-    margin-right: 26px;
-    color: var(--dark-body);
-    opacity: 0.15;
-}
-footer .row > div:first-of-type a{
-    font-family: "ABC Whyte Book";
-    font-size: 15px;
-    color: #B7B1AE;
-    display: block;
-}
-footer .footer-socials{
-    display: flex;
-}
-footer .footer-socials a{
-    max-height: 12px;
-}
-footer .footer-socials a:first-of-type{
-    margin-right: 10px;
-}
-section:last-of-type{
-    margin-bottom: 0;
-}
-footer .footer-links a:not(:last-of-type){
-    margin-bottom: 8px;
-}
 /*responsive stuff and fonts*/
-nav .navbar-toggler img:last-of-type{
-    display: none;
-}
-.logo-mobile img:last-of-type{
-    display: none;
-}
-nav.nav-active .logo-mobile img:first-of-type{
-    display: none;
-}
-nav.nav-active .logo-mobile img:last-of-type{
-    display: inline;
-}
-nav.nav-active .nav-globe{
-    display: none;
-}
-nav.nav-active .logo-text p{
-    color: var(--shayblbn);
-    opacity: 1;
-}
-nav:not(.nav-active) .nav-globe-light{
-    display: none;
-}
-nav.nav-active .navbar-toggler img:last-of-type{
-    display: inline;
-}
-nav.nav-active .navbar-toggler img:first-of-type{
-    display: none;
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    header h1{
-        line-height: 1.13em;
-    }
-    header .header-links a{
-        font-size: 24px;
-    }
-}
 @media screen and (min-width: 1076px)
 {
     .map .map-container img{
         max-height: 826px;
     }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header h1{
+        line-height: 1.13em;
+    }
+    header .header-links a{
+        font-size: 24px !important;
+    }
+}
 @media screen and (min-width: 992px)
 {
     /*idk if I should change this breakpoint for this style*/
     header .header-left, header .header-video{
-        height: calc(var(--viewport-height) - 10px);
+        height: calc(var(--viewport-height) - 20px);
     }
 }
-@media screen and (min-width: 992px) and (max-width: 1024px)
-{
-    header h1{
-        font-size: 40px;
-    }
-}
+
 @media screen and (min-width: 768px) and (max-width: 991px)
 {
-    header h1{
-        font-size: 33px;
-    }
-    .sponsor h2{
-        font-size: 35px;
-    }
-    .video-section p{
-        font-size: 24px;
-    }
     header .header-left img{
         max-width: 30px;
         height: auto;
@@ -824,106 +268,18 @@ nav.nav-active .navbar-toggler img:first-of-type{
     }
 }
 @media screen and (min-width: 768px){
-    nav.navbar{
-        display: none;
-    }
-    .sponsor .row:first-of-type > div:first-of-type > div{
-        padding-left: 30px;
-    }
-    .video-section .text .more{
-        position: absolute;
-        bottom: 0;
-    }
-    .video-section .text .subtext,
-    .video-section .right-text .subtext{
-        border-bottom: 1px solid rgba(26, 24, 24, 0.4);
-    }
     header .header-left > div > div{
         padding-right: 10px;
     }
 }
-@media screen and (max-width: 991px)
-{
-    nav{
-        padding: 10px 40px 10px 40px;
-    }
-    nav .navbar-collapse{
-        margin-top: 53px;
-    }  
-    .navbar-nav .nav-link{
-        font-family: "ABC Whyte";
-        font-size: 30px;
-        font-weight: 300;
-    }
-    nav .nav-item{
-        margin-right: 0;
-        padding-right: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    nav .nav-item:not(:last-of-type){
-        margin-bottom: 20px;
-    }
-    nav.navbar:not(.nav-active):not(.scroll){
-        background: var(--shayblbnMobile);
-    }
-    .collapsing{
-        transition: none;
-    }
-    nav .navbar-toggler{
-        width: 40px;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-    }
-    nav .donate{
-        width: 80px;
-        height: 40px;
-        font-size: 12px;
-    }
-    nav .donate i{
-        margin-right: 5.5px;
-        font-size: 10px;
-    }
-    .projects .more{
-        margin-top: 45px;
-    }
-    nav.nav-active{
-        min-height: 100%;
-        max-height: 100%;
-        background-color: var(--dark2);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-    }
-    nav.nav-active, .nav-active a, .nav-active span, .nav-active li{
-        color: var(--shayblbn);
-    }
-    .nav-active a, .nav-active span:last-of-type{
-        opacity: 1;
-    }
-    nav.nav-active .donate, nav.nav-active .navbar-toggler{
-        border: 2px solid var(--shayblbn);
-    }
-    .projects .project-description > * + * {
-        margin: 33px 0 45px 0;
-    }
-}
 @media screen and (max-width: 767px)
 {
-    header{
-        margin: 7px 7px 0 7px;
-    }
     header .header-left{
         padding-top: 123px;
         background: var(--shayblbnMobile);
     }
     header .header-left > div > div{
         padding-left: 16px;
-    }
-    header .header-links{
-        margin-top: 14.5px;
     }
     header .header-update{
         margin-top: 60.5px;
@@ -933,9 +289,6 @@ nav.nav-active .navbar-toggler img:first-of-type{
     }
     header .header-video > img{
         max-height: 261px;
-    }
-    header .header-links-mobile .slick-slide {
-        margin-left: 15px;
     }
     header .header-update li span{
         display: inline;
@@ -952,127 +305,15 @@ nav.nav-active .navbar-toggler img:first-of-type{
     header .row > div + div{
         margin: 8.5px 0 0 0;
     }
-    .video-section .text{
-        margin: 8.5px 0 0 0 ;
-    }
+    
     .map .row > * + *{
         margin: 0 0 8.5px 0;
-    }
-    .help .row > * + *{
-        margin: 8.5px 0 0 0;
-    }
-    .sponsor .row:first-of-type > * + *{
-        margin: 8.5px 0 0 0;
-    }
-    nav.navbar{
-        display: flex !important;
-        align-items: flex-start;
-        width: calc(100% - 14px);
-        left: 7px;
-        top: 7px;
-    }
-    nav.scroll{
-        width: 100%;
-        top: 0;
-        left: 0;
-        padding: 8.5px 23px 8.5px 23px;
-    }
-    nav .logo-mobile{
-        max-width: 50%;
-    }
-    nav .logo-mobile img{
-        max-width: 100%;
-        height: auto;
-    }
-    nav.navbar:not(.scroll){
-        padding: 8.5px 16px 8.5px 16px;
-        border-bottom: 1px solid rgba(26, 24, 24, 0.07);
-    }
-    header h1{
-        font-size: 30px;
-        line-height: 33px;
-    }
-    header .header-links a.tooltip{
-        font-size: 27px;
-    }
-    .sponsor h2{
-        font-size: 28px;
-        line-height: 35px;
-        font-weight: 300;
-        letter-spacing: -0.018em;
-        margin-bottom: 13px;
-        max-width: 100%;
-    }
-    .sponsor .section-intro p{
-        font-size: 21px;
-        line-height: 30px;
-        letter-spacing: -0.01em;
-        max-width: 100%;
     }
     .more{
         padding-top: 19px;
         padding-bottom: 19px;
     }
-    .projects{
-        margin-left: 7px;
-        margin-right: 7px;
-    }
-    .projects .slide img{
-        max-height: 190px;
-        min-height: 190px;
-        width: 100%;
-    }
-    .projects h3{
-        font-size: 25px;
-        bottom: 21px;
-        left: 16px;
-    }
-    .projects .project-info{
-        font-size: 10px;
-        top: 25px;
-        left: 16px;
-    }
-    .projects .projects-text{
-        padding: 25px 16px 0 16px;
-    }
-    .projects .slick-dots{
-        display: none !important;
-    }
-    .projects .project-description p{
-        max-width: 100%;
-    }
-    .projects .project-description p:first-of-type{
-        line-height: 28px;
-        font-size: 20px;
-    }
-    .projects .quote{
-        line-height: 26px;
-        margin-top: 17px;
-        margin-bottom: 45px;
-        max-width: 100%;
-    }
-    .progress-container{
-        width: 152px;
-        height: 152px;
-    }
-    .progress-container .progress-text span{
-        font-size: 21px;
-    }
-    .progress-container .progress-text span:not(:first-of-type){
-        font-size: 17px;
-    }
-    .projects .progress-container{
-        margin-left: 0;
-        margin-right: auto;
-    }
-    .video-section video{
-        max-height: 355px;
-    }
-    .video-section p{
-        max-width: 100%;
-        font-size: 22px;
-        line-height: 30px;
-    }
+    
     header .header-left > div{
         padding-right: 0;
         padding-left: 0;
@@ -1081,55 +322,22 @@ nav.nav-active .navbar-toggler img:first-of-type{
     .sponsor{
         margin-top: 75px;
     }
-    .sponsor .row:first-of-type, .video-section, .map, .help{
+    .map, .prefooter{
         padding-left: 7px;
         padding-right: 7px;
-    }
-    .sponsor .row:first-of-type > div > div{
-        padding-left: 8px;
-        padding-right: 15px;
-    }
-    .sponsor .slider{
-        padding-top: 32px;
-    }
-    .slider .slide-track.animate {
-        animation: scrollMobile 50s linear infinite;
-        width: calc(var(--slideWidth-mobile) * ((var(--slide-num)) * 2));
-    }
-    .slider .slide-container {
-        width: var(--slideWidth-mobile);
-    }
-    .sponsor .see-more .wrapper{
-        width: 200px;
-        padding: 6px;
-    }
-    .sponsor-slider .slide{
-        padding: 6px 6px 16px 6px;
-        width: 200px;
     }
     .subtext{
         margin-bottom: 17px;
         padding-bottom: 0;
         border-bottom: 0;
     }
-    .video-section .video-text, .video-section .more,
-    .video-section .text .text-container > div:first-of-type,
-    .projects .more, .map .more, footer{
+    .map .more{
         padding-left: 16px;
         padding-right: 16px;
     }
-    .video-section .text .subtext{
-        margin-top: 47px;
-    }
-    .video-section .subtext{
-        padding-bottom: 0;
-        border-bottom: none;
-    }
+    
     .map .map-text-container{
         order: 2;
-    }
-    .map .map-container img{
-        max-height: 190px;
     }
     .map .map-text{
         padding: 30px 16px 0 16px;
@@ -1137,9 +345,7 @@ nav.nav-active .navbar-toggler img:first-of-type{
     .map .progress-container{
         margin-left: 16px;
     }
-    .video-section .more{
-        margin-top: 45px;
-    }
+    
     .map .more{
         margin-top: 30px;
     }
@@ -1161,44 +367,16 @@ nav.nav-active .navbar-toggler img:first-of-type{
     .map h2{
         margin-bottom: 17px;
     }
-    .help .help-text span{
-        font-size: 27px;
-        margin-bottom: 11px;
-    }
-    footer .footer-socials{
-        align-items: center;
-        justify-content: flex-end;
-    }
-    footer hr, footer .footer-links{
-        display: none;
-    }
-    footer{
-        padding-top: 35px;
-        padding-bottom: 35px;
-    }
-    footer .row{
-        align-items: flex-start;
-    }
-    .help .help-text p{
-        font-size: 27px;
-        line-height: 27px;
-    }
 }
-@media screen and (min-width: 480px)
+@media screen and (max-width: 575px)
 {
-    header .header-links:last-of-type{
-        display: none;
+    .map .map-container img{
+        max-height: 190px;
     }
 }
-@media screen and (max-width: 479px)
+@media screen and (min-width: 576px) and (max-width: 767px)
 {
-    header .header-links:first-of-type{
-        display: none;
-    }
-}
-@media screen and (max-width: 340px) {
-    nav .donate{
-        width: 70px;
-        margin-right: 7px;
+    .map .map-container img{
+        max-height: 250px;
     }
 }

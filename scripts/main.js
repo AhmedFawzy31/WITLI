@@ -1,10 +1,3 @@
-/*function isMobileSize() {
-	if(window.innerWidth < 768) {
-		return true;
-	} else {
-		return false;
-	}
-}*/
 let scroll;
 $(document).ready(function(){
   //set viewport height in css
@@ -58,11 +51,12 @@ $(document).ready(function(){
     if(action == "animate" && !container.el.hasAttribute("data-animated")){
       let progress = container.el.getAttribute("data-progress"),
           strokeColour = container.el.getAttribute("data-strokeColor"),
-          trailColour = container.el.getAttribute("data-trailColor");
+          trailColour = container.el.getAttribute("data-trailColor"),
+          strokeWidth = container.el.getAttribute("data-strokeWidth");
       //fade in text, then animate
       $(container.el.firstElementChild).fadeIn(1000).css("display","flex");;
       var progressCircle = new ProgressBar.Circle(container.el, {
-        strokeWidth: 9,
+        strokeWidth: strokeWidth,
         easing: 'easeInOut',
         duration: 2500,
         color: strokeColour,
@@ -83,13 +77,13 @@ $(document).ready(function(){
     var scrolly = obj.scroll.y;
     if(scrolly >= 50 && obj.direction == "down")
     {
-      if(window.innerWidth >= 768)
+      if(window.innerWidth >= 768 && $("nav").hasClass("home"))
         $('nav').fadeIn(300);
         $("nav").addClass("scroll");
     }
     else if(scrolly < 50 && obj.direction == "up")
     {
-      if(window.innerWidth >= 768)
+      if(window.innerWidth >= 768 && $("nav").hasClass("home"))
         $('nav').fadeOut(100);
       else
         $("nav").removeAttr("style");
@@ -109,6 +103,23 @@ $(document).ready(function(){
       scroll.update();
     }, 150);
   });
+  /*scroll to section when button clicked*/
+  let sections = document.querySelectorAll("section");
+  let aTags = document.querySelectorAll("a");
+  for(var i=0; i<sections.length; i++)
+  {
+    let sectionId = "#" + sections[i].getAttribute("id");
+    for(var j=0; j<aTags.length; j++)
+    {
+      let aTarget = aTags[j].getAttribute("href");
+      if(aTarget == sectionId)
+      {
+        aTags[j].addEventListener("click", () => {
+          scroll.scrollTo(document.querySelector(sectionId));
+        })
+      }
+    }
+  }
 });
 $(window).on("load", function(){
   scroll.on('call', (action, event, container) => {
